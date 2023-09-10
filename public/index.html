@@ -1,38 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <script src = "./script/app.js" defer></script>
 </head>
 <body>
-    <div class="content">
-        <div class="info">
-            <h1> Tic Tac Toe </h1>
-            <h2 class="player-name"> Click play to start </h2>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <div class="box">
+        <div class="row">
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
         </div>
-        <table class="board"> 
-            <tr>
-                <td id="00" class="cell"> </td>
-                <td id="01" class="cell"> </td>
-                <td id="02" class="cell"> </td>
-            </tr>
-            <tr>
-                <td id="10" class="cell"> </td>
-                <td id="11" class="cell"> </td>
-                <td id="12" class="cell"> </td>
-            </tr>
-            <tr>
-                <td id="20" class="cell"> </td>
-                <td id="21" class="cell"> </td>
-                <td id="22" class="cell"> </td>
-            </tr>
-        </table>
-        <div class="btns">
-            <button class="play"> play </button>
-            <button class="reset play"> reset </button>
+        <div class="row">
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+        </div>
+        <div class="row">
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
         </div>
     </div>
+    <div class="result-container">
+        <div class="result" id="result">Player X's Turn</div>
+    </div>
+    <div class="reset" id="reset">
+        <button class="reset-button" id="reset-button" disabled>Reset</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
