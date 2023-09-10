@@ -1,33 +1,38 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <link rel="stylesheet" type="text/css" href="
-    <title>Tic Tac Toe Game</title>
-  </head>
-  <body>
-    <div class="container">
-        <table>
-          <tr>
-            <td id="1"></td>
-            <td id="2"></td>
-            <td id="3"></td>
-          </tr>
-          <tr>
-            <td id="4"></td>
-            <td id="5"></td>
-            <td id="6"></td>
-          </tr>
-          <tr>
-            <td id="7"></td>
-            <td id="8"></td>
-            <td id="9"></td>
-          </tr>
-        </table>
-        <button id="reset">Reset</button>
-      </div> 
-  </body>
-  <body>
-    <!-- Your code here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <div class="box">
+        <div class="row">
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+        </div>
+        <div class="row">
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+        </div>
+        <div class="row">
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+            <button class="btn" data-cell></button>
+        </div>
+    </div>
+    <div class="result-container">
+        <div class="result" id="result">Player X's Turn</div>
+    </div>
+    <div class="reset" id="reset">
+        <button class="reset-button" id="reset-button" disabled>Reset</button>
+    </div>
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
