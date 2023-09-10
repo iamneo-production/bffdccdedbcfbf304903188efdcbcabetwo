@@ -1,39 +1,47 @@
+body {
+  padding: 0;
+  margin: 24px;
+}
+td {
+width: 100px;
+height: 100px;
+}
+table {
+margin: 5px auto;
+text-align: center;
+}
 
-body { 
-  font-family: Arial, sans-serif; 
-  text-align: center; 
-} 
-.container { 
-margin: 0 auto; 
-max-width: 400px; 
-padding: 20px; 
-} 
-.grid { 
-display: grid; 
-grid-template-columns: repeat(3, 1fr); 
-gap: 10px; 
-margin-top: 20px; } 
+td {
+  background-color: #ccc;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-.cell { 
-width: 100px; 
-height: 100px; 
-background-color: #eee; 
-display: flex; 
-align-items: center; 
-justify-content: center; 
-font-size: 24px; cursor: pointer; 
-} 
-#message { 
-margin-top: 10px; 
-} 
-#restart-button { 
-margin-top: 20px; 
-background-color: #007bff; 
-color: #fff; 
-border: none; 
-padding: 10px 20px; 
-cursor: pointer; 
-} 
-#restart-button:hover { 
-  background-color: #0056b3; 
+td:hover {
+  background-color: #999;
+}
+
+.info {
+  text-align: center;
+}
+
+.btns {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.play {
+  width: 145px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.play:hover {
+  background-color: #ccc;
 }
