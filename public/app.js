@@ -60,3 +60,16 @@ setTimeout(function() {
       }
     );
   }
+  document.getElementById("reset").addEventListener(
+    "click", 
+    function() {
+  
+    }
+  );
+  for (let i = 1; i <= 9; i++) {
+    document.getElementById(i.toString()).innerHTML = "";
+    document.getElementById(i.toString()).classList.remove("x");
+    document.getElementById(i.toString()).classList.remove("o");
+    document.getElementById(i.toString()).classList.remove("win");
+    gameEnded = false;
+  }

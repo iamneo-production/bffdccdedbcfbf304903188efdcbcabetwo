@@ -24,3 +24,13 @@ td {
 .win {
   background-color: yellow;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#reset {
+  margin: 48px 40%;
+  padding: 20px;
+}
